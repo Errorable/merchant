@@ -1,7 +1,7 @@
 {
   "name": "errorable-order",
   "version": "0.0.1",
-  "description": "order errors for errorable",
+  "description": "merchant errors for errorable",
   "homepage": "",
   "author": {
     "name": "calidion",
@@ -35,7 +35,7 @@
       "mocha": true
     }
   },
-  "repository": "calidion/errorable-order",
+  "repository": "https://github.com/Errorable/merchant",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
