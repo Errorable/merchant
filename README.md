@@ -11,7 +11,7 @@ $ npm install --save errorable-merchant
 
 ```js
 var errorable = require('errorable');
-var errorableOrder = require('errorable-merchant');
+var errorableMerchant = require('errorable-merchant');
 var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
