@@ -1,24 +1,24 @@
-# errorable-order [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> order errors for errorable
+# errorable-merchant [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> merchant errors for errorable
 
 ## Installation
 
 ```sh
-$ npm install --save errorable-order
+$ npm install --save errorable-merchant
 ```
 
 ## Usage
 
 ```js
 var errorable = require('errorable');
-var errorableOrder = require('errorable-order');
+var errorableOrder = require('errorable-merchant');
 var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
 
-// OrderNotFound
-// OrderNotUpdated
-// OrderStateTransferNotAllowed
+// IdError
+// NotLoggedIn
+// NotFound
 ```
 ## License
 
