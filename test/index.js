@@ -19,9 +19,9 @@ describe('errorable-merchant', function () {
   it('should have merchant errors in zh-CN!', function () {
     var count = 0;
     var errors = {
-      IdError: '商户ID错误！',
-      NotLoggedIn: '商户未登录！',
-      NotFound: '商户未找到！'
+      MerchantIdError: '商户ID错误！',
+      MerchantNotLoggedIn: '商户未登录！',
+      MerchantNotFound: '商户未找到！'
     };
     for (var k in errors) {
       if (typeof errors[k] === 'string') {
@@ -35,9 +35,9 @@ describe('errorable-merchant', function () {
   it('should have merchant errors in en-US!', function () {
     var count = 0;
     var errors = {
-      IdError: 'Merchant ID Error!',
-      NotLoggedIn: 'Merchant Not Logged In!',
-      NotFound: 'Merchant Not Found!'
+      MerchantIdError: 'Merchant ID Error!',
+      MerchantNotLoggedIn: 'Merchant Not Logged In!',
+      MerchantNotFound: 'Merchant Not Found!'
     };
 
     for (var k in errors) {

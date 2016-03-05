@@ -16,13 +16,15 @@ var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableMerchant, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableMerchant, 'en-US').errors;
 
-// IdError
-console.log(cnErrors.IdError.message); // 商户ID错误！
-console.log(enUsErrors.IdError.message); // Merchant ID Error!
-// NotLoggedIn
-同上
-// NotFound
-同上
+// MerchantIdErrorIdError
+console.log(cnErrors.MerchantIdErrorIdError.message); // 商户ID错误！
+console.log(enUsErrors.MerchantIdErrorIdError.message); // Merchant ID Error!
+// MerchantNotLoggedIn
+console.log(cnErrors.MerchantNotLoggedIn.message); // 商户未登录！
+console.log(enUsErrors.MerchantNotLoggedIn.message); // Merchant Not Logged In!
+// MerchantNotFound
+console.log(cnErrors.MerchantNotFound.message); // 商户未找到！
+console.log(enUsErrors.MerchantNotFound.message); // Merchant Not Found!
 ```
 ## License
 
