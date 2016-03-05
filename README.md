@@ -13,12 +13,16 @@ $ npm install --save errorable-merchant
 var errorable = require('errorable');
 var errorableMerchant = require('errorable-merchant');
 var Generator = errorable.Generator;
-var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
-var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
+var cnErrors = new Generator(errorableMerchant, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableMerchant, 'en-US').errors;
 
 // IdError
+console.log(cnErrors.IdError.message); // 商户ID错误！
+console.log(enUsErrors.IdError.message); // Merchant ID Error!
 // NotLoggedIn
+同上
 // NotFound
+同上
 ```
 ## License
 

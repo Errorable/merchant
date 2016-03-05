@@ -1,11 +1,11 @@
 'use strict';
 
 var assert = require('assert');
-var errorableOrder = require('../lib');
+var errorableMerchant = require('../lib');
 var errorable = require('errorable');
 var Generator = errorable.Generator;
-var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
-var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
+var cnErrors = new Generator(errorableMerchant, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableMerchant, 'en-US').errors;
 
 var errorCount = 0;
 
